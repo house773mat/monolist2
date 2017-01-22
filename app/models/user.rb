@@ -54,7 +54,7 @@ class User < ActiveRecord::Base
 
   def unwant(item)
     item = wants.find_by(item_id: item.id)
-    item.destroy if item != nil
+    item.destroy if item != nil            #予期しないエラーを防ぐために消去前にnilの判定入れる
   end
 
   def want?(item)
