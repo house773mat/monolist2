@@ -42,6 +42,14 @@
                   <li>
                     <%= link_to "ログアウト", logout_path, method: "delete" %>
                   </li>
+                  <li role="separator" class="divider"></li>
+                  <li>
+                    <%= link_to "持ち物ランキング", ranking_have_path %>
+                  </li>
+                  <li role="separator" class="divider"></li>
+                  <li>
+                    <%= link_to "欲しい物ランキング", ranking_want_path %>
+                  </li>
                 </ul>
               </li>
             <% end %>
